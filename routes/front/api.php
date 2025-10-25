@@ -10,4 +10,6 @@ Route::group($prefix,function (){
     Route::post('/api/get/about', ['uses' => 'About@get','as' => 'get-about']);
     Route::post('/api/skills_desc', ['uses' => 'Skills@desc','as' => 'skills-desc']);
     Route::post('/api/skills_progress', ['uses' => 'Skills@progress','as' => 'skills-progress']);
+    Route::post('/api/resume/edu', ['uses' => 'Skills@progress','as' => 'resume-edu']);
+    Route::post('/api/resume/work_exp', ['uses' => 'Skills@progress','as' => 'resume-work-exp']);
 });

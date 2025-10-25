@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('resume_education', function (Blueprint $table) {
             $table->id();
+            $table->string('title_ru',100)->nullable(false);
+            $table->string('title_en',100)->nullable(false);
+            $table->text('text_ru')->nullable(false);
+            $table->text('text_en')->nullable(false);
+            $table->string('color',50)->default('#00a651');
             $table->timestamps();
         });
     }
