@@ -1,0 +1,60 @@
+<template>
+    <section id="section-contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="heading-title">{{ this.$parent.$parent.$parent.contact }}</h2>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6 wow fadeInRight">
+                    <div class="contact-form">
+                        <form class="contact-box">
+                            <div class="form-group">
+                                <label>Name*</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Email address*</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Message*</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </form>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="#" class="btn btn-default">{{ this.$parent.$parent.$parent.send }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 wow fadeInLeft">
+                    <div class="contact-left">
+                        <p>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei.</p>
+                        <div class="location">
+                            <p>122 34rd Some Street</p>
+                            <p>Vendelliers, NYK</p>
+                            <p>United Country 12</p>
+                        </div>
+                        <ul>
+                            <li><span>Email :</span> <a>contact@yoursite.com</a></li>
+                            <li><span>Phone :</span> <a>1-234-567-89</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+<script>
+
+</script>
+<style scoped>
+
+</style>

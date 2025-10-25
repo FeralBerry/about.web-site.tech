@@ -16,13 +16,13 @@
 
                 <div class="collapse navbar-collapse navigation" id="bs-example-navbar-collapse-1" role="navigation">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#section-banner">Home </a></li>
-                        <li><a href="#section-profile">About me </a></li>
-                        <li><a href="#section-skill">Skills </a></li>
-                        <li><a href="#section-resume">Resume </a></li>
-                        <li><a href="#section-testimonial">Testimonials </a></li>
-                        <li><a href="#section-portfolio">Portfolio </a></li>
-                        <li><a href="#section-contact">Contact me </a></li>
+                        <li class="active"><a href="#section-banner">{{ this.$parent.$parent.home }} </a></li>
+                        <li><a href="#section-profile">{{ this.$parent.$parent.about }} </a></li>
+                        <li><a href="#section-skill">{{ this.$parent.$parent.skills }} </a></li>
+                        <li><a href="#section-resume">{{ this.$parent.$parent.resume }} </a></li>
+                        <li><a href="#section-testimonial">{{ this.$parent.$parent.testimonials }} </a></li>
+                        <li><a href="#section-portfolio">{{ this.$parent.$parent.portfolio }} </a></li>
+                        <li><a href="#section-contact">{{ this.$parent.$parent.contact }} </a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
