@@ -88,14 +88,9 @@
             }
         </script>
         <script type="module">
-
-
             window.Echo.channel('posts')
                 .listen('.create', (data) => {
                     console.log('Order status updated: ', data);
-                    var d1 = document.getElementById('notification');
-                    d1.innerHTML = '<div class="alert alert-success alert-dismissible show"><span><i class="fa fa-circle-check"></i>  '+data.message+'</span></div>';
-
                 });
         </script>
 

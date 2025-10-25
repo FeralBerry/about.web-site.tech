@@ -4,9 +4,8 @@ use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+include 'front/front_web.php';
+include 'back/back_web.php';
 
 Auth::routes();
 

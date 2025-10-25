@@ -1,7 +1,7 @@
-import './bootstrap';
+import '../bootstrap.js';
 import { createApp } from 'vue';
 import router from "./router.js";
-import IndexComponent from './components/IndexComponent.vue';
+import IndexComponent from '../Components/IndexComponent.vue';
 
 createApp(IndexComponent)
     .use(router)

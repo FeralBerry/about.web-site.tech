@@ -15,20 +15,15 @@ class PostController extends Controller
         return view('posts', compact('posts'));
     }
 
-    public function store(Request $request)
+    public function store()
     {
-
-        $this->validate($request, [
-            'title' => 'required',
-            'body' => 'required'
-        ]);
-
         $post = Post::create([
-            'user_id' => auth()->id(),
-            'title' => $request->title,
-            'body' => $request->body
+            'user_id' => 1,
+            'title' => 'Заголовок',
+            'body' => 'текст'
         ]);
         event(new PostCreate($post));
+        return $post;
         //return back()->with('success','Post created successfully.');
     }
 }
