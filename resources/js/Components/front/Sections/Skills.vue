@@ -79,7 +79,7 @@ export default defineComponent({
         getSkillDesc(){
             axios.post('/api/skills_desc')
                 .then((res) => {
-                    if(res.data !== null){
+                    if(res.data.length > 0){
                         this.skills_desc = res.data[0]
                     }
 
@@ -88,7 +88,7 @@ export default defineComponent({
         getSkillProgress(){
             axios.post('/api/skills_progress')
                 .then((res) => {
-                    if(res.data !== null){
+                    if(res.data.length > 0){
                         this.skills_progress = res.data
                     }
                 })

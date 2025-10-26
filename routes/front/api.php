@@ -12,4 +12,5 @@ Route::group($prefix,function (){
     Route::post('/api/skills_progress', ['uses' => 'Skills@progress','as' => 'skills-progress']);
     Route::post('/api/resume/edu', ['uses' => 'Skills@progress','as' => 'resume-edu']);
     Route::post('/api/resume/work_exp', ['uses' => 'Skills@progress','as' => 'resume-work-exp']);
+    Route::post('/api/get/portfolio', ['uses' => 'Portfolio@get','as' => 'get-portfolio']);
 });

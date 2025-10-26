@@ -32,6 +32,7 @@ export default defineComponent({
             work_exp_text: '',
             education_text: '',
             resume_text: '',
+            portfolio_desc: '',
             ru:'',
             en:''
         }
@@ -58,6 +59,7 @@ export default defineComponent({
                 this.work_exp_title = this.ru['work_exp_title']
                 this.work_exp_text = this.ru['education_text']
                 this.resume_text = this.ru['resume_text']
+                this.portfolio_desc = this.ru['portfolio_desc']
             }
             else if(this.lang === 'en'){
                 this.learn_more = this.en['learn_more']
@@ -75,6 +77,7 @@ export default defineComponent({
                 this.work_exp_title = this.en['work_exp_title']
                 this.work_exp_text = this.en['education_text']
                 this.resume_text = this.en['resume_text']
+                this.portfolio_desc = this.en['portfolio_desc']
             }
         },100)
     },
@@ -103,6 +106,7 @@ export default defineComponent({
                 this.education_text = this.en['education_text']
                 this.work_exp_text = this.en['work_exp_text']
                 this.resume_text = this.en['resume_text']
+                this.portfolio_desc = this.en['portfolio_desc']
             }
             else if(this.lang === 'en'){
                 this.lang = 'ru'
@@ -121,6 +125,7 @@ export default defineComponent({
                 this.education_text = this.ru['education_text']
                 this.work_exp_text = this.ru['work_exp_text']
                 this.resume_text = this.ru['resume_text']
+                this.portfolio_desc = this.ru['portfolio_desc']
             }
         }
     }

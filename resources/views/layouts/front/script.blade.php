@@ -1,25 +1,6 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!-- initialize jQuery Library -->
-<script type="text/javascript" src="{{ asset('front/js/jquery.js') }}"></script>
-<!-- Bootstrap jQuery -->
-<script type="text/javascript" src="{{ asset('front/js/bootstrap.min.js') }}"></script>
-<!-- PrettyPhoto -->
-<script type="text/javascript" src="{{ asset('front/js/jquery.prettyPhoto.js') }}"></script>
-<!-- Wow Animation -->
 <script type="text/javascript" src="{{ asset('front/js/wow.min.js') }}"></script>
-<!-- singlepagenav -->
-<script src="{{ asset('front/js/jquery.singlePageNav.js') }}"></script>
-<!-- Eeasing -->
-<script type="text/javascript" src="{{ asset('front/js/jquery.easing.1.3.js') }}"></script>
-<!-- Sticky Menu -->
-<script type="text/javascript" src="{{ asset('front/js/jquery.sticky.js') }}"></script>
-<script type="text/javascript" src="{{ asset('front/js/custom.js') }}"></script>
-<script>
-        $(".main-nav").sticky();
-</script>
-
 <script>
     new WOW().init();
 </script>
