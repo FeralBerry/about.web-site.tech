@@ -13,4 +13,6 @@ Route::group($prefix,function (){
     Route::post('/api/resume/edu', ['uses' => 'Skills@progress','as' => 'resume-edu']);
     Route::post('/api/resume/work_exp', ['uses' => 'Skills@progress','as' => 'resume-work-exp']);
     Route::post('/api/get/portfolio', ['uses' => 'Portfolio@get','as' => 'get-portfolio']);
+    Route::post('/api/get/quotes', ['uses' => 'Quotes@get','as' => 'get-quotes']);
+    Route::post('/api/send_contact', ['uses' => 'Contact@send','as' => 'get-contact']);
 });
