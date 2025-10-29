@@ -37,12 +37,14 @@
                 </div>
                 <div class="col-md-6 col-sm-6 wow fadeInLeft">
                     <div class="contact-left">
-                        <template v-for="quote in quotes">
-                            <template v-if="this.$parent.$parent.$parent === 'ru'">
-                                <p v-html="quote.text_ru"></p>
+                        <template v-if="quotes !== null">
+                            <template v-if="this.$parent.$parent.$parent.lang === 'ru'">
+                                <p v-html="q.text_ru"></p>
+                                <p style="color:#09c3e7" v-html="q.author_ru"></p>
                             </template>
                             <template v-else>
-                                <p v-html="quote.text_en"></p>
+                                <p v-html="q.text_en"></p>
+                                <p style="color:#09c3e7" v-html="q.author_en"></p>
                             </template>
                         </template>
                         <ul>
@@ -62,12 +64,16 @@ export default defineComponent({
     data(){
         return{
             quotes:null,
+            q:null,
             canSend:true
         }
     },
     components: {},
     mounted() {
         this.getQuotes()
+        setInterval(() => {
+            this.randomQuotes()
+        },10000)
     },
     methods:{
         getQuotes(){
@@ -75,8 +81,14 @@ export default defineComponent({
                 .then((res) => {
                     if(res.data.length > 0){
                         this.quotes = res.data
+                        this.q = res.data[0]
                     }
                 })
+        },
+        randomQuotes(){
+            if(this.quotes !==null){
+                this.q = this.quotes[Math.floor(Math.random()*this.quotes.length)];
+            }
         },
         sendContactForm(){
             let name = document.getElementById('contact_name').value

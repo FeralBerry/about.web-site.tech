@@ -10,8 +10,10 @@
     "contact" : "Contact me",
     "send" : "Send",
     "education_title" : "Education",
-    "education_text" : "Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.<br>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.",
+    "education_text" : "Knowledge in many areas allows you to make a website just for you and you will not need other specialists to fully customize your site.",
     "work_exp_title" : "Work Experience",
-    "work_exp_text" : "Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.<br>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.",
-    "resume_text" : "Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.<br>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est."
+    "work_exp_text" : "Working with a variety of different tools allows you to choose the most powerful and effective tools for your business.",
+    "resume_text" : "Just a little bit about me, after which you will be able to understand that for sure I will be able to help your business.",
+    "portfolio_desc" : "Here you can view examples of our work in the form of photos and descriptions.",
+    "download_resume" : "Download Resume"
 }

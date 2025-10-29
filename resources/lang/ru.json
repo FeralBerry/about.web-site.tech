@@ -10,9 +10,10 @@
     "contact" : "Контакты",
     "send" : "Отправить",
     "education_title" : "Образование",
-    "education_text" : "Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.<br>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.",
+    "education_text" : "Знания в многих областях позволяют сделать сайт именно под Вас и не нужны будут другие специалисты для полной настройки вашего сайта.",
     "work_exp_title" : "Опыт работы",
-    "work_exp_text" : "Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.<br>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.",
-    "resume_text" : "Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.<br>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.",
-    "portfolio_desc" : "Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est, eam dicam soluta ei. Vel dicam vivendo accusata ei, cum ne periculis molestiae pri.<br>Lorem ipsum dolor sit amet, ea doming epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est."
+    "work_exp_text" : "Работа с множеством разных инструментов позволяет подобрать самые мощные и эффективные инструменты для Вашего бизнеса.",
+    "resume_text" : "Совсем немного обо мне, после чего вы сможете понять, что наверняка я смогу помочь вашему бизнесу.",
+    "portfolio_desc" : "Здесь можно ознакомиться с примерами работ в виде фото и описания к ним.",
+    "download_resume": "Скачать резюме"
 }

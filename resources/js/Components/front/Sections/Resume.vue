@@ -85,7 +85,7 @@
                         </div>
                     </article>
                 </div>
-                <a href="#" class="btn btn-default featured">Download Resume</a>
+                <a href="#" class="btn btn-default featured">{{ this.$parent.$parent.$parent.download_resume }}</a>
             </div>
         </div>
 
