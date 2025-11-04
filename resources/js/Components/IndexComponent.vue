@@ -34,6 +34,7 @@ export default defineComponent({
             resume_text: '',
             portfolio_desc: '',
             download_resume: '',
+            quiz_survey: '',
             ru:'',
             en:''
         }
@@ -62,6 +63,7 @@ export default defineComponent({
                 this.resume_text = this.ru['resume_text']
                 this.portfolio_desc = this.ru['portfolio_desc']
                 this.download_resume = this.ru['download_resume']
+                this.quiz_survey = this.ru['quiz_survey']
             }
             else if(this.lang === 'en'){
                 this.learn_more = this.en['learn_more']
@@ -81,6 +83,7 @@ export default defineComponent({
                 this.resume_text = this.en['resume_text']
                 this.portfolio_desc = this.en['portfolio_desc']
                 this.download_resume = this.en['download_resume']
+                this.quiz_survey = this.en['quiz_survey']
             }
         },100)
     },
@@ -111,6 +114,7 @@ export default defineComponent({
                 this.resume_text = this.en['resume_text']
                 this.portfolio_desc = this.en['portfolio_desc']
                 this.download_resume = this.en['download_resume']
+                this.quiz_survey = this.en['quiz_survey']
             }
             else if(this.lang === 'en'){
                 this.lang = 'ru'
@@ -131,6 +135,7 @@ export default defineComponent({
                 this.resume_text = this.ru['resume_text']
                 this.portfolio_desc = this.ru['portfolio_desc']
                 this.download_resume = this.ru['download_resume']
+                this.quiz_survey = this.ru['quiz_survey']
             }
         }
     }
