@@ -1,19 +1,23 @@
 <template>
     <main-banner></main-banner>
-    <main-menu></main-menu>
 </template>
 <script>
 import {defineComponent} from "vue";
-import MainMenu from "@/Components/front/Sections/MainMenu.vue";
-import MainBanner from "@/Components/front/Sections/MainBanner.vue";
+
+import MainBanner from "@/Components/front/Markup/MainBanner.vue";
 
 export default defineComponent({
     data(){
         return {
-
+            blankPage:true
         }
     },
-    components: {MainMenu,MainBanner},
+    watch: {
+        $route (to,from) {
+            this.blankPage = to.href === '/';
+        }
+    },
+    components: {MainBanner},
     mounted() {
 
     },

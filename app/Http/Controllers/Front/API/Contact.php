@@ -3,43 +3,45 @@
 namespace App\Http\Controllers\Front\API;
 
 
+
 use Illuminate\Http\Request;
-use App\Models\Contact as C;
+use Illuminate\Support\Facades\DB;
+use NotificationChannels\Telegram\Exceptions\CouldNotSendNotification;
+use TelegramBot\Api\Exception;
 
 class Contact
 {
-    public function send(Request $request){
+    protected TelegramBot $telegram;
+    public function __construct()
+    {
+        $this->telegram = new TelegramBot();
+    }
+
+    public function sendContact(Request $request)
+    {
         $name = $request['name'];
         $email = $request['email'];
-        $mess = $request['mess'];
-        $data = [
-            'error' => null,
-            'success' => 'The message was sent successfully'
-        ];
+        $message = $request['message'];
+        $text = "Имя: ".$name."\nКонтакт: ".$email."\nСообщение: ".$message;
+        $this->telegram->sendMessage($text,1);
+    }
 
-        if(strlen($name) < 3){
-            $data = [
-                'error' => 'The name must be at least 3 characters long'
-            ];
-            return $data;
+    /**
+     * @throws Exception
+     * @throws CouldNotSendNotification
+     */
+    public function sendHire(Request $request){
+
+        $name = $request['name'];
+        $email = $request['email'];
+        $message = $request['message'];
+        $text = "Имя: ".$name."\nКонтакт: ".$email."\nСообщение: ".$message;
+        $this->telegram->sendMessage($text,1);
+        if ($request->hasFile('files')) {
+            foreach ($request->file('files') as $f) {
+                $path = $f->store('uploads', 'public');
+                $this->telegram->sendHire($path,1);
+            }
         }
-        if(empty($email)){
-            $data = [
-                'error' => 'Email required'
-            ];
-            return $data;
-        }
-        if(strlen($mess) < 9){
-            $data = [
-                'error' => 'The message must be at least 10 characters long.'
-            ];
-            return $data;
-        }
-        C::create([
-            'name' => $name,
-            'email' => $email,
-            'message' => $mess
-        ]);
-        return $data;
     }
 }
