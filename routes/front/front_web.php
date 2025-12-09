@@ -7,7 +7,7 @@ $main = [
     'namespace' => 'App\Http\Controllers\Front'
 ];
 Route::group($main,function () {
-    Route::get('/', ['uses' => 'IndexController@index', 'as' => 'front-index']);
+    Route::get('/{any?}', ['uses' => 'IndexController@index', 'as' => 'front-index']);
 });
 $prefix = [
     'namespace' => 'App\Http\Controllers\Front\Projects'

@@ -1,4 +1,5 @@
-cd<template>
+<template>
+    <modal></modal>
     <header-component></header-component>
     <router-view>
 
@@ -11,6 +12,7 @@ import {defineComponent} from "vue";
 import HeaderComponent from "@/Components/front/Markup/HeaderComponent.vue";
 import FooterComponent from "@/Components/front/Markup/FooterComponent.vue";
 import DisableDevtool from 'disable-devtool';
+import Modal from "@/Components/front/Sections/Modal.vue";
 
 /*DisableDevtool({
     disableMenu:false,
@@ -25,12 +27,18 @@ export default defineComponent({
     data(){
         return {
             auth: false,
+            open_modal: false,
             lang: navigator.language,
         }
     },
-    components: {FooterComponent, HeaderComponent},
+    components: {FooterComponent, HeaderComponent,Modal},
     mounted() {
         this.contentMenu()
+    },
+    watch:{
+        '$route'(to,from) {
+
+        },
     },
     methods:{
         checkAuth(){

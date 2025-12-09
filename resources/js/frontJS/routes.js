@@ -3,6 +3,7 @@ import RegisterComponent from "@/Components/Auth/RegisterComponent.vue";
 import FrontMainComponent from "@/Components/front/FrontMainComponent.vue";
 import BlogArticle from "@/Components/front/Sections/BlogArticle.vue";
 import Blog from "@/Components/front/Sections/Blog.vue";
+import Contact from "@/Components/front/Sections/Contact.vue";
 
 
 
@@ -27,6 +28,11 @@ const routes = [
         path: '/blog',
         component: Blog,
         name: 'front.blog'
+    },
+    {
+        path: '/contact',
+        component: Contact,
+        name: 'front.contact'
     },
     {
         path: '/blog/:id',

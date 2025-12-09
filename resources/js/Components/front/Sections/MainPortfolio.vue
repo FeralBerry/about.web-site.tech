@@ -90,10 +90,5 @@ export default defineComponent({
 })
 </script>
 <style scoped>
-.portfolio_img{
-    height: 150px;
-}
-@media (max-width: 500px){
-    height: auto;
-}
+
 </style>

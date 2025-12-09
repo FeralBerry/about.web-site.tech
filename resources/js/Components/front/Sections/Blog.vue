@@ -9,11 +9,8 @@
                 </div>
             </div>
         </div><!-- END TITLE PAGE -->
-
-
         <div class="block-page" >
             <div class="container-medium">
-
                 <!-- FORM SEARCH-->
                 <form class="box-widget">
                     <div class="input-group">
@@ -23,11 +20,10 @@
                 </span>
                     </div>
                 </form><!-- END FORM SEARCH-->
-
                 <ul class="list-unstyled list-blog">
                     <li v-for="(item,key) in this.blog">
                         <div class="clearfix box-blog">
-                            <div class="blog-bg" :data-holdbg="'\\base\\blog\\no-img.jpeg'" >&nbsp
+                            <div class="blog-bg" :data-holdbg="'\\base\\blog\\no-img.jpeg'" >
                                 <img :src="'/base/blog/no-img.jpeg'" class="blog_main_img" :alt="item.title">
                                 <div  class="blog-ic" v-html="item.type_img"></div>
                             </div>
@@ -44,30 +40,16 @@
                         </div>
                     </li>
                 </ul>
-
-
-
                 <div class="text-center" v-if="this.paginate !== null">
                     <ul class="pagination flat-pagination">
                         <template v-for="(item, key) in this.paginate.links">
-
-                                <li v-if="item.active" class="active"><router-link :to="item.url">{{ item.label }}</router-link></li>
-
-
-                                <li v-else>{{ item.page }}</li>
-<!--                                <li><router-link :to="newBlog(item.label)">{{ item.label }}</router-link></li>-->
-
+                                <li v-if="item.active" class="active"><router-link @click="newBlog(item.page)" to="" v-html="item.label"></router-link></li>
+                                <li v-else><router-link @click="newBlog(item.page)" to="" v-html="item.label"></router-link></li>
                         </template>
                     </ul>
                 </div>
             </div>
-
-
         </div>
-
-
-
-
     </section>
 </template>
 <script>
@@ -92,7 +74,6 @@ export default defineComponent({
                     this.blog = res.data.data
                     if(res.data.last_page > 1){
                         this.paginate = res.data
-                        console.log(this.paginate.links)
                     }
                 })
         },
@@ -100,7 +81,15 @@ export default defineComponent({
             return moment(date).format('DD-MM-YYYY');
         },
         newBlog(page){
-
+            if(page !== null){
+                axios.post('/api/blog/page/' + page)
+                    .then((res) => {
+                        this.blog = res.data.data
+                        if(res.data.last_page > 1){
+                            this.paginate = res.data
+                        }
+                    })
+            }
         }
     }
 })

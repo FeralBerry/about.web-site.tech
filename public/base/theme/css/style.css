@@ -1907,3 +1907,15 @@ textArea.form-flat {
   background: #ffffff;
   color: #000000;
 }
+.modal_title{
+    font-size: 30px;
+    color:#000;
+    padding-bottom: 10px
+}
+@media (max-width: 500px){
+    .modal_title{
+        color:#000;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+}

@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 class IndexController extends Controller
 {
 
-    public function index(){
+    public function index($id = null){
         $data = array_merge([
 
         ]);
