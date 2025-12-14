@@ -18,4 +18,5 @@ Route::group($prefix,function (){
     //Route::post('/sendMessage',['uses' => 'TelegramBot@sendMessage', 'as' => 'telegram-message']);
     Route::post('/send/contact/form',['uses' => 'Contact@sendContact', 'as' => 'send-contact']);
     Route::post('/send/hire/form',['uses' => 'Contact@sendHire', 'as' => 'send-hire']);
+    Route::post('/modal',['uses' => 'Contact@modal', 'as' => 'modal-send']);
 });

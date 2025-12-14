@@ -78,9 +78,7 @@
                             </form>
                         </div>
                     </div><!--End Tabs-->
-
                 </div>
-
             </div>
             <div class="map-area">
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A92f55cb8ead0a5b5dbd2872a875b140bc4108bb1609adf0143e8426efe3e022f&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
@@ -104,8 +102,8 @@ export default defineComponent({
 
 
         $('.input-file input[type=file]').on('change', function(){
-            let $files_list = $(this).closest('.input-file').next();
-            $files_list.empty();
+            let files_list = $(this).closest('.input-file').next();
+            files_list.empty();
 
             for(var i = 0; i < this.files.length; i++){
                 let new_file_input = '<div class="input-file-list-item">' +
@@ -119,7 +117,7 @@ export default defineComponent({
                     '            }\n' +
                     '            input[0].files = this.dt.files;" style="color: red;padding: 3px;"><i class="fa fa-close"></i></a>' +
                     '</div>';
-                $files_list.append(new_file_input);
+                files_list.append(new_file_input);
                 this.dt.items.add(this.files.item(i));
             };
             this.files = this.dt.files;

@@ -1573,7 +1573,7 @@ ss.SimpleUpload.prototype = {
                 xhr.setRequestHeader( 'Content-type', 'application/x-www-form-urlencoded' );
             }
 
-            // Set the upload progress header for Nginx
+            // Set the upload progress headers for Nginx
             if ( opts.nginxProgressUrl ) {
                 xhr.setRequestHeader( opts.nginxProgressHeader, key );
             }

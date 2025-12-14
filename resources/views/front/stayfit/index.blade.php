@@ -1,4 +1,4 @@
-@extends('front.stayfit.layout')
+@extends('front.stayfit.layout.layout')
 @section('content')
     <!-- Main Slider -->
     <section id="main-slider" class="main-slider">
@@ -22,7 +22,7 @@
                              data-endelementdelay="0.3"
                              data-endspeed="1200"
                              data-endeasing="Power4.easeIn"
-                             style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="curved-layer light-blue"><h3>GET FIT IN LESS THAN 6 WEEKS</h3></div></div>
+                             style="z-index: 4; max-width: 100%; max-height: 100%; white-space: nowrap;"><div class="curved-layer light-blue"><h3>GET FIT IN LESS THAN 6 WEEKS</h3></div></div>
 
                         <div class="tp-caption lfb tp-resizeme"
                              data-x="left" data-hoffset="530"
@@ -36,7 +36,7 @@
                              data-endelementdelay="0.3"
                              data-endspeed="1200"
                              data-endeasing="Power4.easeIn"
-                             style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="curved-layer dark-blue"><h2>ARE YOU READY TO CHANGE YOURSELVE?</h2></div></div>
+                             style="z-index: 4; max-width: 100%; max-height: 100%; white-space: nowrap;"><div class="curved-layer dark-blue"><h2>ARE YOU READY TO CHANGE YOURSELVE?</h2></div></div>
 
                         <div class="tp-caption lfb tp-resizeme"
                              data-x="left" data-hoffset="470"
@@ -50,7 +50,7 @@
                              data-endelementdelay="0.3"
                              data-endspeed="1200"
                              data-endeasing="Power4.easeIn"
-                             style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="curved-layer light-blue"><a href="#"><span class="fa fa-play-circle"></span> &ensp; TRY OUT THIS PLAN FOR 30 DAYS AND TOTALLY FREE</a></div></div>
+                             style="z-index: 4; max-width: 100%; max-height: 100%; white-space: nowrap;"><div class="curved-layer light-blue"><a href="#"><span class="fa fa-play-circle"></span> &ensp; TRY OUT THIS PLAN FOR 30 DAYS AND TOTALLY FREE</a></div></div>
 
 
                     </li>
@@ -70,7 +70,7 @@
                              data-endelementdelay="0.3"
                              data-endspeed="1200"
                              data-endeasing="Power4.easeIn"
-                             style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="curved-layer light-blue"><h3>GET FIT IN LESS THAN 6 WEEKS</h3></div></div>
+                             style="z-index: 4; max-width: 100%; max-height: 100%; white-space: nowrap;"><div class="curved-layer light-blue"><h3>GET FIT IN LESS THAN 6 WEEKS</h3></div></div>
 
                         <div class="tp-caption stb tp-resizeme"
                              data-x="center" data-hoffset="0"
@@ -84,7 +84,7 @@
                              data-endelementdelay="0.3"
                              data-endspeed="1200"
                              data-endeasing="Power4.easeIn"
-                             style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="curved-layer dark-blue"><h2>CHANGE YOURSELVE AND TRY YOUR WORKPUT AT OUR GYM!</h2></div></div>
+                             style="z-index: 4; max-width: 100%; max-height: 100%; white-space: nowrap;"><div class="curved-layer dark-blue"><h2>CHANGE YOURSELVE AND TRY YOUR WORKPUT AT OUR GYM!</h2></div></div>
 
                         <div class="tp-caption lfr tp-resizeme"
                              data-x="center" data-hoffset="0"
@@ -98,7 +98,7 @@
                              data-endelementdelay="0.3"
                              data-endspeed="1200"
                              data-endeasing="Power4.easeIn"
-                             style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="curved-layer light-blue"><a href="#"><span class="fa fa-play-circle"></span> &ensp; TRY OUT THIS PLAN FOR 30 DAYS AND TOTALLY FREE</a></div></div>
+                             style="z-index: 4; max-width: 100%; max-height: 100%; white-space: nowrap;"><div class="curved-layer light-blue"><a href="#"><span class="fa fa-play-circle"></span> &ensp; TRY OUT THIS PLAN FOR 30 DAYS AND TOTALLY FREE</a></div></div>
 
 
                     </li>
@@ -118,7 +118,7 @@
                              data-endelementdelay="0.3"
                              data-endspeed="1200"
                              data-endeasing="Power4.easeIn"
-                             style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="curved-layer light-pink"><h2>WORKOUT FOR WOMEN</h2></div></div>
+                             style="z-index: 4; max-width: 100%; max-height: 100%; white-space: nowrap;"><div class="curved-layer light-pink"><h2>WORKOUT FOR WOMEN</h2></div></div>
 
                         <div class="tp-caption lfb stb tp-resizeme"
                              data-x="left" data-hoffset="144"
@@ -132,7 +132,7 @@
                              data-endelementdelay="0.3"
                              data-endspeed="1200"
                              data-endeasing="Power4.easeIn"
-                             style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="curved-layer dark-blue"><h3>TAKE A LOOK AT THE  FITNESS COURSES</h3></div></div>
+                             style="z-index: 4; max-width: 100%; max-height: 100%; white-space: nowrap;"><div class="curved-layer dark-blue"><h3>TAKE A LOOK AT THE  FITNESS COURSES</h3></div></div>
 
                         <div class="tp-caption lfr tp-resizeme"
                              data-x="right" data-hoffset="-228"
@@ -146,7 +146,7 @@
                              data-endelementdelay="0.3"
                              data-endspeed="1200"
                              data-endeasing="Power4.easeIn"
-                             style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="curved-layer light-blue"><h2>WORKOUT FOR MEN</h2></div></div>
+                             style="z-index: 4; max-width: 100%; max-height: 100%; white-space: nowrap;"><div class="curved-layer light-blue"><h2>WORKOUT FOR MEN</h2></div></div>
 
                         <div class="tp-caption lfr tp-resizeme"
                              data-x="right" data-hoffset="-194"
@@ -160,7 +160,7 @@
                              data-endelementdelay="0.3"
                              data-endspeed="1200"
                              data-endeasing="Power4.easeIn"
-                             style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="curved-layer dark-blue"><h3>HECK OUT THE 6 WEEKS FITNESS PLAN</h3></div></div>
+                             style="z-index: 4; max-width: 100%; max-height: 100%; white-space: nowrap;"><div class="curved-layer dark-blue"><h3>HECK OUT THE 6 WEEKS FITNESS PLAN</h3></div></div>
 
                     </li>
 

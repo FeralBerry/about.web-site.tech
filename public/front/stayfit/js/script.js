@@ -1,95 +1,95 @@
+
 (function($) {
-	
+
 	"use strict";
-	
-	
+
+
 	//Hide Loading Box (Preloader)
 	function handlePreloader() {
 		if($('.preloader').length){
 			$('.preloader').delay(500).fadeOut(500);
 		}
 	}
-	
+
 	//Change Header Style
 	function headerStyle() {
-		if($('.main-header').length){
+		if($('.main-headers').length){
 			var windowpos = $(window).scrollTop();
 			if (windowpos >= 1) {
-				$('.main-header').addClass('header-fixed');
+				$('.main-headers').addClass('header-fixed');
 			} else {
-				$('.main-header').removeClass('header-fixed');
+				$('.main-headers').removeClass('header-fixed');
 			}
 		}
 	}
-	
-	
+
+
 	//Main Slider
 	if($('#main-slider').length){
-
-		jQuery('.tp-banner').show().revolution({
+        jQuery('.tp-banner').show().revolution({
 		  delay:7000,
 		  startwidth:1170,
 		  startheight:650,
 		  hideThumbs:1400,
-	
+
 		  thumbWidth:80,
 		  thumbHeight:50,
 		  thumbAmount:5,
-	
+
 		  navigationType:"bullet",
 		  navigationArrows:"0",
 		  navigationStyle:"preview4",
-	
+
 		  touchenabled:"on",
 		  onHoverStop:"off",
-	
+
 		  swipe_velocity: 0.7,
 		  swipe_min_touches: 1,
 		  swipe_max_touches: 1,
 		  drag_block_vertical: false,
-	
+
 		  parallax:"mouse",
 		  parallaxBgFreeze:"on",
 		  parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
-	
+
 		  keyboardNavigation:"off",
-	
+
 		  navigationHAlign:"center",
 		  navigationVAlign:"bottom",
 		  navigationHOffset:0,
 		  navigationVOffset:20,
-	
+
 		  soloArrowLeftHalign:"left",
 		  soloArrowLeftValign:"center",
 		  soloArrowLeftHOffset:20,
 		  soloArrowLeftVOffset:0,
-	
+
 		  soloArrowRightHalign:"right",
 		  soloArrowRightValign:"center",
 		  soloArrowRightHOffset:20,
 		  soloArrowRightVOffset:0,
-	
+
 		  shadow:0,
 		  fullWidth:"on",
 		  fullScreen:"off",
-	
+
 		  spinner:"spinner4",
-	
+
 		  stopLoop:"off",
 		  stopAfterLoops:-1,
 		  stopAtSlide:-1,
-	
+
 		  shuffle:"off",
-	
+
 		  autoHeight:"off",
 		  forceFullWidth:"on",
-	
+
 		  hideThumbsOnMobile:"off",
 		  hideNavDelayOnMobile:1500,
 		  hideBulletsOnMobile:"on",
 		  hideArrowsOnMobile:"off",
 		  hideThumbsUnderResolution:0,
-	
+
 		  hideSliderAtLimit:0,
 		  hideCaptionAtLimit:0,
 		  hideAllCaptionAtLilmit:0,
@@ -98,9 +98,9 @@
 		  fullScreenOffsetContainer: "#main-slider"
 	  });
 
-		
+
 	}
-	
+
 	//Curved Carousel Slider
 	if($('.curved-carousel .slider').length){
 		$('.curved-carousel .slider').bxSlider({
@@ -112,9 +112,9 @@
 			speed: 1000,
 			pager:true
 		});
-	
+
 	}
-	
+
 	//Tweets Slider
 	if($('.tweets-slider').length){
 		$('.tweets-slider').bxSlider({
@@ -127,10 +127,10 @@
 			pager:false
 		});
 	}
-	
+
 	//Image Scroller
 	if($(".image-scroller").length){
-		
+
 		$('.image-scroller').bxSlider({
 		  minSlides: 1,
 		  maxSlides: 1,
@@ -144,10 +144,10 @@
 		  infiniteLoop: true
 		});
 	}
-	
+
 	//Logo Scroller
 	if($(".logo-scroller").length){
-		
+
 		$('.logo-scroller .slider').bxSlider({
 		  minSlides: 1,
 		  maxSlides: 1,
@@ -161,17 +161,17 @@
 		  infiniteLoop: true
 		});
 	}
-	
-	
+
+
 	//Jquery Knob animation -- Fact Counter
 	if($('.dial').length){
 		$('.dial').appear(function(){
           var elm = $(this);
-          var color = elm.attr("data-fgColor");  
-          var perc = elm.attr("value");  
- 
-          elm.knob({ 
-               'value':0, 
+          var color = elm.attr("data-fgColor");
+          var perc = elm.attr("value");
+
+          elm.knob({
+               'value':0,
                 'min':0,
                 'max':100,
                 "skin":"tron",
@@ -197,8 +197,8 @@
 
           },{accY: 10});
     }
-	
-	
+
+
 	//Contact Form Validation
 	if($('#contact-form').length){
 		$('#contact-form').validate({ // initialize the plugin
@@ -217,7 +217,7 @@
 					required: true
 				}
 			},
-			submitHandler: function (form) { 
+			submitHandler: function (form) {
 				// sending value with ajax request
 				$.post($(form).attr('action'), $(form).serialize(), function (response) {
 					$(form).parent('div').append(response);
@@ -226,7 +226,7 @@
 			}
 		});
 	}
-	
+
 	// Google Map Settings
 	if($('#map-location').length){
 		var map;
@@ -238,7 +238,7 @@
 			lat: -37.817085,
 			lng: 144.955631
 		  });
-		  
+
 		  //Add map Marker
 		  map.addMarker({
 			lat: -37.817085,
@@ -246,10 +246,10 @@
 			infoWindow: {
 			  content: '<p style="color:#3b3b3b; text-align:center;"><strong>Envato</strong><br>Melbourne VIC 3000, Australia</p>'
 			}
-		 
+
 		});
 	}
-	
+
 	//Add Scroll Bar To Schedule
 	if($('.schedule-box').length){
 		$(".schedule-box").mCustomScrollbar({
@@ -258,8 +258,8 @@
 			advanced:{autoExpandHorizontalScroll:true}
 		});
 	}
-	
-	
+
+
 	// Elements Animation
 	if($('.wow').length){
 		var wow = new WOW({
@@ -276,13 +276,13 @@
 			$(this).parent().find('.toggle-content').slideToggle();
 		});
 	}
-	
-	// custom tab for what we do section 
+
+	// custom tab for what we do section
     function sideTab () {
         if ($('.side-tab').length) {
             var tabWrap = $('.side-tab .col-lg-9');
             var tabClicker = $('.side-tab .col-lg-3 ul li a');
-            
+
             tabWrap.find('div').hide();
             tabWrap.find('div').eq(0).show();
             tabClicker.on('click', function() {
@@ -303,7 +303,7 @@
     function GalleryImgActivator () {
     	if($('#gallery-page').length) {
 			$('#gallery-page a').fancybox();
-    	}    	
+    	}
     }
     // testimonial page carsoule
     function TestimonialPageCarsoule () {
@@ -324,11 +324,11 @@
 			            items:3
 			        }
 			    }
-			});    		
+			});
     	}
 
     }
-    // back to top 
+    // back to top
     function backToTop () {
 	    var offset = 1;
 	    var duration = 700;
@@ -351,7 +351,7 @@
     	if($('#image-gallery').length){
     		$('#image-gallery').mixItUp();
     	}
-    	
+
     }
 
     // scrolling navigation
@@ -360,7 +360,7 @@
     		// $('.navbar-collapse ul > li').each(function () {
     		// 	$(this).addClass('scroll');
     		// });
-			$('.navbar-collapse ul > li > a').click(function() {  
+			$('.navbar-collapse ul > li > a').click(function() {
 				$('.navbar-collapse ul > li > a').parent().removeClass('current');
 				$(this).parent().addClass('current');
 				$('html, body').animate({scrollTop: $(this.hash).offset().top -60}, 1000);
@@ -390,7 +390,7 @@
 /* ==========================================================================
    When document is ready, do
    ========================================================================== */
-   
+
 	$(document).on('ready', function() {
 		headerStyle();
 		sideTab();
@@ -404,19 +404,19 @@
 /* ==========================================================================
    When document is Scrollig, do
    ========================================================================== */
-	
+
 	$(window).on('scroll', function(event) {
 		headerStyle();
 		ScrollToActiveMenu();
 	});
-	
+
 /* ==========================================================================
    When document is loading, do
    ========================================================================== */
-	
+
 	$(window).on('load', function() {
 		handlePreloader();
 	});
-	
+
 
 })(window.jQuery);

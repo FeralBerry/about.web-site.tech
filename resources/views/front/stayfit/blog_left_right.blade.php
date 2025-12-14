@@ -1,4 +1,4 @@
-@extends('front.stayfit.layout')
+@extends('front.stayfit.layout.layout')
 @section('content')
     <!--Page Banner -->
     <section class="page-banner" style="background-image:url({{ asset('front/stayfit/images/background/page-banner-bg.jpg') }})">

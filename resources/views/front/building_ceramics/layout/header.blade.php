@@ -1,7 +1,7 @@
 <!-- Header -->
 <header class="header-main container-fluid no-padding">
 <!--     Top Header
-    <div class="top-header container-fluid no-padding">
+    <div class="top-headers container-fluid no-padding">
          Container
         <div class="container">
             <div class="row">

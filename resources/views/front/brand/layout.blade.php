@@ -75,7 +75,7 @@ App Landing Page
 						<p>Lorem Ipsum is simply dummy text of the printing and type setting industry consectetur adipisicing elit, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing tempor incididunt!</p>
 					</div>
 
-					<!-- header button -->
+					<!-- headers button -->
 					<div class="head-btn wow fadeInLeft">
 						<a href="#" class="btn-primary app-store">
 						<i class="fa fa-apple"></i> <span> App Store</span>
@@ -91,7 +91,7 @@ App Landing Page
 
 				<!-- phone image -->
 				<div class="col-md-6">
-				<img src="{{ asset('front/brand/images/header-phone.png') }}" alt="phone" class="header-phone img-responsive wow fadeInRight">
+				<img src="{{ asset('front/brand/images/headers-phone.png') }}" alt="phone" class="header-phone img-responsive wow fadeInRight">
 				</div>
 			</div>
 		</div>

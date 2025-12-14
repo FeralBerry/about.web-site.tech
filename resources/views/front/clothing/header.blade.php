@@ -1,4 +1,4 @@
-<!-- Start of header area -->
+<!-- Start of headers area -->
 <header class="header-area header-wrapper">
     <div class="header-top-bar black-bg clearfix">
         <div class="container">
@@ -351,4 +351,4 @@
         </div>
     </div>
 </header>
-<!-- End of header area -->
+<!-- End of headers area -->

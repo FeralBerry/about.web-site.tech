@@ -286,10 +286,10 @@
 
 	$(window).scroll(function() {
 	if ($(this).scrollTop() > 1){
-		$('#sticky-header').addClass("sticky");
+		$('#sticky-headers').addClass("sticky");
 	  }
 	  else{
-		$('#sticky-header').removeClass("sticky");
+		$('#sticky-headers').removeClass("sticky");
 	  }
 });
 

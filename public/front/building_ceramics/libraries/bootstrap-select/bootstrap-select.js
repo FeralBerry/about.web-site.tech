@@ -381,7 +381,7 @@
           that.$button
             .addClass('bs-invalid')
             .focus();
-          
+
           that.$element.on({
             'focus.bs.select': function () {
               that.$button.focus();
@@ -398,7 +398,7 @@
               that.$element.off('rendered.bs.select');
             }
           });
-          
+
         });
       }
 
@@ -610,7 +610,7 @@
           _li.push(generateLI(generateA(text, optionClass, inline, tokens), index, 'hidden is-hidden'));
         } else {
           var showDivider = this.previousElementSibling && this.previousElementSibling.tagName === 'OPTGROUP';
-          
+
           // if previous element is not an optgroup and hideDisabled is true
           if (!showDivider && that.options.hideDisabled) {
             // get previous elements
@@ -620,17 +620,17 @@
               // find the first element in the previous elements that is an optgroup
               if ($prev[i].tagName === 'OPTGROUP') {
                 var optGroupDistance = 0;
-  
+
                 // loop through the options in between the current option and the optgroup
                 // and check if they are hidden or disabled
                 for (var d = 0; d < i; d++) {
                   var prevOption = $prev[d];
                   if (prevOption.disabled || $(prevOption).data('hidden') === true) optGroupDistance++;
                 }
-  
+
                 // if all of the options between the current option and the optgroup are hidden or disabled, show the divider
                 if (optGroupDistance === i) showDivider = true;
-  
+
                 break;
               }
             }
@@ -897,7 +897,7 @@
               },
               lis = that.$menuInner[0].getElementsByTagName('li'),
               lisVisible = Array.prototype.filter ? Array.prototype.filter.call(lis, hasClass('hidden', false)) : that.$lis.not('.hidden'),
-              optGroup = Array.prototype.filter ? Array.prototype.filter.call(lisVisible, hasClass('dropdown-header', true)) : lisVisible.filter('.dropdown-header');
+              optGroup = Array.prototype.filter ? Array.prototype.filter.call(lisVisible, hasClass('dropdown-header', true)) : lisVisible.filter('.dropdown-headers');
 
           getPos();
           menuHeight = selectOffsetBot - menuExtras.vert;
@@ -906,7 +906,7 @@
           if (that.options.container) {
             if (!$menu.data('height')) $menu.data('height', $menu.height());
             getHeight = $menu.data('height');
-            
+
             if (!$menu.data('width')) $menu.data('width', $menu.width());
             getWidth = $menu.data('width');
           } else {
@@ -1114,12 +1114,12 @@
     },
 
     tabIndex: function () {
-      if (this.$element.data('tabindex') !== this.$element.attr('tabindex') && 
+      if (this.$element.data('tabindex') !== this.$element.attr('tabindex') &&
         (this.$element.attr('tabindex') !== -98 && this.$element.attr('tabindex') !== '-98')) {
         this.$element.data('tabindex', this.$element.attr('tabindex'));
         this.$button.attr('tabindex', this.$element.data('tabindex'));
       }
-      
+
       this.$element.attr('tabindex', -98);
     },
 
@@ -1279,7 +1279,7 @@
         }
       });
 
-      this.$menuInner.on('click', '.divider, .dropdown-header', function (e) {
+      this.$menuInner.on('click', '.divider, .dropdown-headers', function (e) {
         e.preventDefault();
         e.stopPropagation();
         if (that.options.liveSearch) {
@@ -1350,7 +1350,7 @@
           }
           $searchBase.parent().addClass('hidden');
 
-          that.$lis.filter('.dropdown-header').each(function () {
+          that.$lis.filter('.dropdown-headers').each(function () {
             var $this = $(this),
                 optgroup = $this.data('optgroup');
 
@@ -1391,7 +1391,7 @@
         }
 
         that.$lis.filter('.active').removeClass('active');
-        if (that.$searchbox.val()) that.$lis.not('.hidden, .divider, .dropdown-header').eq(0).addClass('active').children('a').focus();
+        if (that.$searchbox.val()) that.$lis.not('.hidden, .divider, .dropdown-headers').eq(0).addClass('active').children('a').focus();
         $(this).focus();
       });
     },
@@ -1422,16 +1422,16 @@
       this.findLis();
 
       var $options = this.$element.find('option'),
-          $lisVisible = this.$lis.not('.divider, .dropdown-header, .disabled, .hidden'),
+          $lisVisible = this.$lis.not('.divider, .dropdown-headers, .disabled, .hidden'),
           lisVisLen = $lisVisible.length,
           selectedOptions = [];
-          
+
       if (status) {
         if ($lisVisible.filter('.selected').length === $lisVisible.length) return;
       } else {
         if ($lisVisible.filter('.selected').length === 0) return;
       }
-          
+
       $lisVisible.toggleClass('selected', status);
 
       for (var i = 0; i < lisVisLen; i++) {
@@ -1460,7 +1460,7 @@
 
     toggle: function (e) {
       e = e || window.event;
-      
+
       if (e) e.stopPropagation();
 
       this.$button.trigger('click');
@@ -1479,7 +1479,7 @@
           nextPrev,
           prevIndex,
           isActive,
-          selector = ':not(.disabled, .hidden, .dropdown-header, .divider)',
+          selector = ':not(.disabled, .hidden, .dropdown-headers, .divider)',
           keyCodeMap = {
             32: ' ',
             48: '0',

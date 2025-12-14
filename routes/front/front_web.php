@@ -7,7 +7,7 @@ $main = [
     'namespace' => 'App\Http\Controllers\Front'
 ];
 Route::group($main,function () {
-    Route::get('/{any?}', ['uses' => 'IndexController@index', 'as' => 'front-index']);
+    Route::get('/', ['uses' => 'IndexController@index', 'as' => 'front-index']);
 });
 $prefix = [
     'namespace' => 'App\Http\Controllers\Front\Projects'
@@ -18,6 +18,7 @@ Route::group($prefix,function (){
     include 'projects/building_ceramics.php';
     include 'projects/clothing.php';
     include 'projects/stayfit.php';
+    include 'projects/monsterat.php';
 });
 Route::post('/webhook',function (){
     return response('OK',200);
